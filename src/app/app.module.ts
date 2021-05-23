@@ -1,18 +1,24 @@
-import { ShoperList } from './../root/Header/Shopper_list/shopper_list.component';
-import { RootComponent } from './../root/root.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {Header} from '../root/Header/header.component';
+import {Header} from './Header/header.component';
 import { AppComponent } from './app.component';
-import { RecipeComponent } from '../root/Header/recipe/recipe.component';
+import { RecipeComponent } from './recipe/recipe.component'
+import { RecipeDetailComponent } from './recipe/recipe-detail/recipe-detail.component';
+import { RecipeListComponent } from './recipe/recipe-list/recipe-list.component';
+import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
+import { RecipeItemComponent } from './recipe/recipe-list/recipe-item/recipe-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RootComponent,
     Header,
-    ShoperList,
-    RecipeComponent
+    RecipeComponent,
+    RecipeDetailComponent,
+    RecipeListComponent,
+    ShoppingListComponent,
+    ShoppingEditComponent,
+    RecipeItemComponent
 
   ],
   imports: [
